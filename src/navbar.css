@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+  background: linear-gradient(258deg, #ff0000, #000000, #ffffff);
+  background-size: 600% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-animation: AnimationName 14s ease infinite;
+  -moz-animation: AnimationName 14s ease infinite;
+  animation: AnimationName 14s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% { background-position: 0% 20%; }
+  50% { background-position: 100% 81%; }
+  100% { background-position: 0% 20%; }
+}
+
+@-moz-keyframes AnimationName {
+  0% { background-position: 0% 20%; }
+  50% { background-position: 100% 81%; }
+  100% { background-position: 0% 20%; }
+}
+
+@keyframes AnimationName {
+  0% { background-position: 0% 20%; }
+  50% { background-position: 100% 81%; }
+  100% { background-position: 0% 20%; }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #navbar li {
+    padding: 10px 0;
+  }
+
+  #navbar li a {
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #navbar {
+    gap: 5px;
+  }
+
+  #navbar li a {
+    font-size: 1rem;
+  }
+}
