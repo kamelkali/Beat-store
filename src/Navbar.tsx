@@ -1,4 +1,6 @@
+// @ts-ignore
 import './navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -9,7 +11,7 @@ function Navbar() {
                     <ul id="navbar" className="flex gap-8">
                         <li className="list-none">
                             <a className="text-white font-semibold hover:text-red-600 transition-colors duration-300 relative after:absolute after:h-0.5 after:bg-red-600 after:left-0 after:-bottom-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300">
-                                HOME
+                                <Link to={"/"}>HOME</Link>
                             </a>
                         </li>
                         <li className="list-none">

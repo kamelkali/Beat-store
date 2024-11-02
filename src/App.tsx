@@ -1,4 +1,5 @@
-import SearchBar from './SearchBar';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import HomePage from "./Home/HomePage.tsx";
 import Footer from './Footer';
 import Navbar from  './Navbar.tsx';
 
@@ -6,11 +7,19 @@ function App() {
 
   return (
     <>
-        <Navbar/>
-        <SearchBar/>
+        <Router>
+            <Navbar/>
+            <Routes>
+                <Route path="/" element={<HomePage/>}></Route>
+
+            </Routes>
+            <Footer/>
+        </Router>
 
 
-        <Footer/>
+
+
+
     </>
   )
 }
